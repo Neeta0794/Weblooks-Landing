@@ -1,0 +1,248 @@
+@import url(../css/fonts.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+body {
+  font-family: "Heebo";
+  font-weight: 400;
+  color: #a2a2a2;
+  overflow-x: hidden;
+}
+:root {
+  --blue: #13a1b1;
+  --yellow: #fab925;
+}
+.textYellow {
+  color: var(--yellow);
+}
+.textBlue {
+  color: var(--blue);
+}
+.webBtn {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
+.webBtnBlue, .webBtnYellow:hover {
+  background-color: var(--blue);
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+.webBtnYellow, .webBtnBlue:hover, .transperentBtn:hover {
+  background-color: var(--yellow);
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+.headingIcon {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.sectionPadding {
+  padding-top: 6.5rem;
+}
+.sectionHead p {
+  font-size: 1.3rem;
+}
+
+/* *********** Background Shapes ************ */
+.shapOne::before, .shapOne::after, .ServiceShape::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+.shapOne::before {
+  background: url(../img/shapeOne.png) left center no-repeat;
+  left: -7rem;
+  right: 0;
+  top: -38rem;
+  bottom: 0;
+  background-size: 30rem;
+}
+.shapOne::after {
+  background: url(../img/shapeTwo.png) right no-repeat;
+  left: 0;
+  right: -1.5rem;
+  top: 0;
+  bottom: -35rem;
+  background-size: 30rem;
+}
+.ServiceShape::before {
+  background: url(../img//shapeOne.png) left top no-repeat;
+  background-size: 11.5rem;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+/* *********** Navbar ************ */
+.logo {
+  width: 40%;
+}
+.hoverLine {
+  color: var(--blue);
+}
+.hoverLine:hover {
+  background-color: var(--yellow);
+  color: white;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+.hoverLine::before{
+  content: '';
+  height: 2px;
+  background-color: white;
+  left: 1rem;
+  right: 100%;
+  bottom: 0.6rem;
+  position: absolute;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+}
+.hoverLine:hover::before {
+  right: 45%;
+}
+.menu .navbar-toggler-icon {
+  background-image: none;
+}
+.menu .navbar-toggler {
+  line-height: 3rem;
+}
+.menu .navbar-toggler:focus {
+  box-shadow: none;
+}
+.menu .iconBar {
+  background: var(--yellow);
+  width: 1.5rem;
+  height: 0.1rem;
+  display: block;
+}
+.menu .navbar button.nav-link {
+  font-size: 14px;
+}
+
+/* *********** Banner ************ */
+.bannerForm p {
+  font-size: 18px;
+  line-height: 1.6rem;
+}
+.bannerImg {
+  width: 90%;
+}
+
+/* *********** Form ************ */
+.formBody {
+  background: rgba(114, 200, 210, 0.12);
+}
+.formBody input {
+  border: 1px solid rgba(208, 208, 208, 0.68);
+}
+.formBody input, .formBody input::-webkit-input-placeholder, .formBody form select {
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #6f8ba4;
+  line-height: 28px;
+  border-radius: 4px;
+}
+.formBody input:focus, .formBody form select:focus, .formBody input:focus-visible {
+  border-color: #101010;
+  box-shadow: none;
+  outline: -webkit-focus-ring-color auto 1px;
+}
+button:focus-visible, button:focus, button {
+  outline: none;
+  border: none;
+}
+
+/* *********** Service Section ************ */
+
+.transperentBtn {
+  border: 1px solid var(--blue);
+  color: var(--blue);
+  background: #f6fcfd;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: .3px;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+.transperentBtn:hover {
+  border-color: var(--yellow);
+  color: #fff;
+}
+.serviceContent img {
+  width: 2.9rem;
+  height: 2.5rem;
+}
+.serviceContent .serviceIcon {
+  width: 2.4rem;
+}
+.serviceContent h5 {
+  font-size: 1.1rem;
+}
+.serviceBox {
+  border: 1px solid rgb(111 139 164 / 18%);
+  padding: 2.5rem 2rem;
+}
+.serviceContent {
+  min-height: 15rem;
+}
+
+/* *********** Why Us Section ************ */
+
+.whyUs {
+  background: #f1fbfd;
+}
+.whyUsContent img {
+  width: 3rem;
+  height: 2.9rem;
+}
+
+/* *********** Hosting Package Section ************ */
+
+.packageHead {
+  background: var(--blue);
+  height: 7.3rem;
+}
+.packageHead h3 {
+  padding-top: 4.3rem;
+}
+.packageIcon {
+  position: absolute;
+  top:-1.7rem;
+  left: 0;
+  right: 0;
+}
+.odd {
+  background: #faf9f9;
+}
+.even {
+  background: #f0f0f0;
+}
+.plan p {
+  font-size: 14px;
+  color: #6a7483;
+  line-height: 1.6rem;
+  font-weight: 300;
+}
+.plan p b {
+  font-weight: 700;
+}
+.packagePrice button {
+  font-size: 12px;
+  letter-spacing: .5px;
+}
+.packagePrice h5 small {
+  font-size: 12px;
+  color: var(--blue);
+  line-height: 3rem;
+}
+.packageBox {
+  border: 1px solid #f3f3f3;
+}
