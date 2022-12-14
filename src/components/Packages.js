@@ -10,11 +10,11 @@ class Packages extends Component {
       <section className='packages'>
         <div className='container-md'>
           <div className='sectionHead text-center my-5'>
-            <h2 className='textBlue fw-normal pt-4'>Hosting Packages</h2>
+            <h2 className='textBlue fw-normal py-3'>Hosting Packages</h2>
           </div>
           <div className='row'>
             <div className='col-md-3'>
-              <div className='packageBox text-center mx-md-1'>
+              <div className='packageBox text-center mx-md-1 position-relative'>
                 <div className='packageHead position-relative'>
                   <img src={BasicIcon} className='packageIcon rounded-circle mx-auto' alt='Package Icon' />
                   <h3 className='fw-bold fs-4 text-white'>Basic Plan</h3>

@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 import Navbar from './Navbar';
 import Packages from './Packages';
 import BannerImg from '../assets/img/bannerImg.png';
@@ -16,6 +18,8 @@ import Support from '../assets/img/support.png';
 import Budget from '../assets/img/budget.png';
 import CustomerSatisfaction from '../assets/img/custSatisfaction.png';
 import Team from '../assets/img/team.png';
+import Portfolio from '../assets/img/portfolio.png';
+import Img1 from '../assets/img/1.jpg';
 
 class Main extends Component {
   render() {
@@ -63,7 +67,7 @@ class Main extends Component {
         <section className='services position-relative sectionPadding pb-5'>
             <div className='container-md pb-4'>
               <div className='sectionHead'>
-                <img src={PaperPlane} alt='paper-plane' className='headingIcon mb-4'/>
+                <img src={PaperPlane} alt='Services' className='headingIcon mb-4'/>
                 <h2 className='textYellow fw-normal'>Services</h2>
                 <p className='fw-light'>Getting a quality website is not an expenses but rather an investment.</p>
               </div>
@@ -156,10 +160,10 @@ class Main extends Component {
             </div>
         </section>
 
-        <section className='whyUs py-5'>
+        <section className='whyUs pb-4 pt-5'>
           <div className='container-md pt-4'>
             <div className='sectionHead text-center'>
-              <img src={WhyUs} alt='paper-plane' className='headingIcon mb-4'/>
+              <img src={WhyUs} alt='Why Us' className='headingIcon mb-4'/>
               <h2 className='textBlue fw-normal'>Why Us</h2>
               <p className='fw-light'>A satisfied customer is the best business strategy of all.</p>
             </div>
@@ -212,7 +216,46 @@ class Main extends Component {
 
         <Packages />
 
-        <section className='sectionPadding'></section>
+        <section className='sectionPadding'>
+          <div className='container-md pb-4'>
+            <div className='sectionHead text-center'>
+              <img src={Portfolio} alt='Portfolio' className='headingIcon mb-4'/>
+              <h2 className='textYellow fw-normal'>Portfolio</h2>
+              <p className='fw-light'>Have a look on some of our awesome works samples.</p>
+            </div>
+
+            <div className='row mt-5'>
+              <div className='col-md-4'>
+                <div className='counter my-4'>
+                  <h1 className='textBlue display-5'>53+</h1>
+                  <p className='fs-4 textYellow text-capitalize'>Happy Clients</p>
+                </div>
+                <div className='counter mb-4'>
+                  <h1 className='textBlue display-5'>20+</h1>
+                  <p className='fs-4 textYellow text-capitalize'>Running projects</p>
+                </div>
+                <div className='counter mb-4'>
+                  <h1 className='textBlue display-5'>567+</h1>
+                  <p className='fs-4 textYellow text-capitalize'>Cup of coffee</p>
+                </div>
+              </div>
+
+              <div className='col-md-8'>
+              <Carousel showThumbs={false} showArrows={false} autoPlay={true} showStatus={false}>
+                <div>
+                    <img src={Img1} alt='' />
+                </div>
+                <div>
+                    <img src={Img1} alt='' />
+                </div>
+                <div>
+                    <img src={Img1} alt='' />
+                </div>
+            </Carousel>
+              </div>
+            </div>
+          </div>
+        </section>
 
       </React.Fragment>
     )
