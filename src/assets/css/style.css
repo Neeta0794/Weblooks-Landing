@@ -48,10 +48,13 @@ body {
 }
 .sectionHead p {
   font-size: 1.3rem;
+} 
+.sectionHead h2 {
+  font-size: 2.2rem;
 }
 
 /* *********** Background Shapes ************ */
-.shapOne::before, .shapOne::after, .ServiceShape::before {
+.shapOne::before, .shapOne::after, .ServiceShape::before, .testimonial::before {
   content: '';
   position: absolute;
   z-index: -1;
@@ -75,6 +78,14 @@ body {
 .ServiceShape::before {
   background: url(../img/shapeOne.png) left top no-repeat;
   background-size: 11.5rem;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.testimonial::before {
+  background: url(../img/shapeThree.png) right center no-repeat;
+  background-size: 30rem;
   left: 0;
   right: 0;
   top: 0;
@@ -280,10 +291,57 @@ button:focus-visible, button:focus, button {
 .counter p {
   font-weight: 500;
 }
-
-.carousel .control-dots .dot {
-  border: 1px solid #ffcd00;
-  width: 11px;
-  height: 11px;
+.carousel .control-dots {
+  bottom: -2.7rem;
+}
+.carousel .control-dots .dot, .slick-dots li button:before {
+  border: 2px solid #ffcd00;
+  width: 12px;
+  height: 12px;
   box-shadow: none;
+  background: transparent;
+  opacity: 1;
+  margin: 0 6px;
+  border-radius: 50%;
+}
+.carousel .control-dots .dot.selected, .slick-dots li.slick-active button:before {
+  background: var(--yellow);
+}
+.carousel.carousel-slider {
+  overflow: visible;
+}
+
+.testimonial {
+  padding-bottom: 6.5rem;
+  background: rgb(232 247 250 / 35%);
+}
+.avtar p {
+  font-size: 18px;
+  font-weight: 500;
+}
+.avtar img {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+.slick-dots li button:before, .slick-dots li.slick-active button:before {
+  color: transparent;
+}
+.slick-dots li button {
+  width: initial;
+  height: initial;
+}
+.slick-dots {
+  text-align: left;
+}
+.slick-dots li {
+  width: 12px;
+  height: 12px;
+  margin: 0 3px;
+}
+
+.shapeFour img {
+  width: 99%;
+}
+.contact .sectionHead p {
+  font-size: 1.4rem;
 }

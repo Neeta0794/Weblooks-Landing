@@ -3,6 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import Navbar from './Navbar';
 import Packages from './Packages';
+import Testimonial from './Testimonial';
 import BannerImg from '../assets/img/bannerImg.png';
 import PaperPlane from '../assets/img/paperPlane.png';
 import WebDev from '../assets/img/webDev.png';
@@ -20,6 +21,9 @@ import CustomerSatisfaction from '../assets/img/custSatisfaction.png';
 import Team from '../assets/img/team.png';
 import Portfolio from '../assets/img/portfolio.png';
 import Img1 from '../assets/img/1.jpg';
+import Img2 from '../assets/img/2.jpg';
+import Img3 from '../assets/img/3.jpg';
+import ContactBackground from '../assets/img/shapeFour.png';
 
 class Main extends Component {
   render() {
@@ -246,12 +250,57 @@ class Main extends Component {
                     <img src={Img1} alt='' />
                 </div>
                 <div>
-                    <img src={Img1} alt='' />
+                    <img src={Img2} alt='' />
                 </div>
                 <div>
-                    <img src={Img1} alt='' />
+                    <img src={Img3} alt='' />
                 </div>
             </Carousel>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <Testimonial />
+
+        <section className='contact'>
+          <div className='row'>
+            <div className='col-md-5'>
+              <div className='shapeFour'>
+                <img src={ContactBackground} alt=''/>
+              </div>
+            </div>
+            <div className='col-md-7 mt-3'>
+              <div className='container-md'>
+                <div className='sectionHead text-left my-5'>
+                  <h2 className='textYellow fw-normal'>Contact Us</h2>
+                  <p className='fw-light mb-0'>Get in touch with us and feel free to ask your any questions.</p>
+                </div>
+                <div className='form'>
+                  <div class="mb-4">
+                    <input type="text" class="form-control" id="name" placeholder="Name" />
+                  </div>
+                  <div class="mb-4">
+                    <input type="text" class="form-control" id="phone" placeholder="Phone Number" />
+                  </div>
+                  <div class="mb-4">
+                    <input type="text" class="form-control" id="email" placeholder="Email" />
+                  </div>
+                  <div class="mb-4">
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Website Development</option>
+                      <option value="">E-commerce Website</option>
+                      <option value="">Web Application Development</option>
+                      <option value="">Digital Marketing (SEO, SMO...)</option>
+                      <option value="">Android App Development</option>
+                      <option value="">Domain & Hosting Services</option>
+                      <option value="">Customized Software Development</option>
+                    </select>
+                  </div>
+                  <div class="mb-4">
+                    <textarea type="text" class="form-control" id="requirement" placeholder="Requirements" rows={3}></textarea>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
