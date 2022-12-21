@@ -4,6 +4,7 @@ import { Carousel } from 'react-responsive-carousel';
 import Navbar from './Navbar';
 import Packages from './Packages';
 import Testimonial from './Testimonial';
+import Footer from './Footer';
 import BannerImg from '../assets/img/bannerImg.png';
 import PaperPlane from '../assets/img/paperPlane.png';
 import WebDev from '../assets/img/webDev.png';
@@ -53,7 +54,7 @@ class Main extends Component {
                             <option value="">Customized Software Development</option>
                           </select>
                         </form>
-                          <button className='text-uppercase webBtnYellow text-white rounded webBtn px-4 py-2'>submit form</button>
+                          <button className='text-uppercase webBtnYellow text-white rounded-0 webBtn border-0 mt-3 px-4 py-2'>submit form</button>
                       </div>
                     </div>
                   </div>
@@ -84,7 +85,7 @@ class Main extends Component {
                         <h5 className='mt-4 mb-3 textBlue fw-bold'>Website Development</h5>
                         <p>You get a fully-functional website that force the visitors to stay, interact and convert. we help you power your business with effective platform.</p>
                       </div>
-                      <button className="text-uppercase transperentBtn rounded fw-medium px-4 py-2 mt-4">
+                      <button className="text-uppercase transperentBtn rounded-0 fw-medium px-4 py-2 mt-4">
                           Request a quote
                       </button>
                     </div>
@@ -98,7 +99,7 @@ class Main extends Component {
                         <h5 className='mt-4 mb-3 textBlue fw-bold'>E-Commerce Website</h5>
                         <p>We are developing online stores using latest technology with latest framework and also we are providing dedicated support for E-commerce clients.</p>
                       </div>
-                      <button className="text-uppercase transperentBtn rounded fw-medium px-4 py-2 mt-4">
+                      <button className="text-uppercase transperentBtn rounded-0 fw-medium px-4 py-2 mt-4">
                           Request a quote
                       </button>
                     </div>
@@ -112,7 +113,7 @@ class Main extends Component {
                         <h5 className='mt-4 mb-3 textBlue fw-bold'>Web Application Development</h5>
                         <p>Weblooks IT services promises to best web application development services at the most competitive pricing. We specialize in rendering flexible and superior quality web applications.</p>
                       </div>
-                      <button className="text-uppercase transperentBtn rounded fw-medium px-4 py-2 mt-4">
+                      <button className="text-uppercase transperentBtn rounded-0 fw-medium px-4 py-2 mt-4">
                           Request a quote
                         </button>
                     </div>
@@ -126,7 +127,7 @@ class Main extends Component {
                         <h5 className='mt-4 mb-3 textBlue fw-bold'>Digital Marketing (SEO,SMO,SEM)</h5>
                         <p>As per client requirement we provide the best Digital Marketing Services. We set up an efficient campaign and also provide best cost effective solution so as to run it.</p>
                       </div>
-                      <button className="text-uppercase transperentBtn rounded fw-medium px-4 py-2 mt-4">
+                      <button className="text-uppercase transperentBtn rounded-0 fw-medium px-4 py-2 mt-4">
                           Request a quote
                       </button>
                     </div>
@@ -140,7 +141,7 @@ class Main extends Component {
                         <h5 className='mt-4 mb-3 textBlue fw-bold'>Andriod App Development</h5>
                         <p>A High-Performance and Scalable App That Runs Smoothly Across Diverse Android Devices.</p>
                       </div>
-                      <button className="text-uppercase transperentBtn rounded fw-medium px-4 py-2 mt-4">
+                      <button className="text-uppercase transperentBtn rounded-0 fw-medium px-4 py-2 mt-4">
                           Request a quote
                       </button>
                     </div>
@@ -154,7 +155,7 @@ class Main extends Component {
                         <h5 className='mt-4 mb-3 textBlue fw-bold'>Domain & Hosting Service</h5>
                         <p>We provide all types of domains for purchase as per client requirement and integrate the same along with hosting.</p>
                       </div>
-                      <button className="text-uppercase transperentBtn rounded fw-medium px-4 py-2 mt-4">
+                      <button className="text-uppercase transperentBtn rounded-0 fw-medium px-4 py-2 mt-4">
                           Request a quote
                       </button>
                     </div>
@@ -164,7 +165,7 @@ class Main extends Component {
             </div>
         </section>
 
-        <section className='whyUs pb-4 pt-5'>
+        <section className='whyUs pb-5 pt-5'>
           <div className='container-md pt-4'>
             <div className='sectionHead text-center'>
               <img src={WhyUs} alt='Why Us' className='headingIcon mb-4'/>
@@ -266,45 +267,46 @@ class Main extends Component {
         <section className='contact'>
           <div className='row'>
             <div className='col-md-5'>
-              <div className='shapeFour'>
-                <img src={ContactBackground} alt=''/>
+              <div className='shapeFour position-relative'>
+                <img src={ContactBackground} alt='' className='w-100'/>
               </div>
             </div>
-            <div className='col-md-7 mt-3'>
-              <div className='container-md'>
-                <div className='sectionHead text-left my-5'>
-                  <h2 className='textYellow fw-normal'>Contact Us</h2>
-                  <p className='fw-light mb-0'>Get in touch with us and feel free to ask your any questions.</p>
+            <div className='col-md-6 mt-3 ms-md-4'>
+              <div className='sectionHead text-left my-5'>
+                <h2 className='textYellow fw-normal'>Contact Us</h2>
+                <p className='fw-light mb-0'>Get in touch with us and feel free to ask your any questions.</p>
+              </div>
+              <div className='form'>
+                <div className="mb-4">
+                  <input type="text" className="form-control ps-4" id="name" placeholder="Name" />
                 </div>
-                <div className='form'>
-                  <div class="mb-4">
-                    <input type="text" class="form-control" id="name" placeholder="Name" />
-                  </div>
-                  <div class="mb-4">
-                    <input type="text" class="form-control" id="phone" placeholder="Phone Number" />
-                  </div>
-                  <div class="mb-4">
-                    <input type="text" class="form-control" id="email" placeholder="Email" />
-                  </div>
-                  <div class="mb-4">
-                    <select class="form-select" aria-label="Default select example">
-                      <option selected>Website Development</option>
-                      <option value="">E-commerce Website</option>
-                      <option value="">Web Application Development</option>
-                      <option value="">Digital Marketing (SEO, SMO...)</option>
-                      <option value="">Android App Development</option>
-                      <option value="">Domain & Hosting Services</option>
-                      <option value="">Customized Software Development</option>
-                    </select>
-                  </div>
-                  <div class="mb-4">
-                    <textarea type="text" class="form-control" id="requirement" placeholder="Requirements" rows={3}></textarea>
-                  </div>
+                <div className="mb-4">
+                  <input type="text" className="form-control ps-4" id="phone" placeholder="Phone Number" />
                 </div>
+                <div className="mb-4">
+                  <input type="text" className="form-control ps-4" id="email" placeholder="Email" />
+                </div>
+                <div className="mb-4">
+                  <select class="form-select ps-4">
+                    <option selected>Website Development</option>
+                    <option value="">E-commerce Website</option>
+                    <option value="">Web Application Development</option>
+                    <option value="">Digital Marketing (SEO, SMO...)</option>
+                    <option value="">Android App Development</option>
+                    <option value="">Domain & Hosting Services</option>
+                    <option value="">Customized Software Development</option>
+                  </select>
+                </div>
+                <div class="mb-4">
+                  <textarea type="text" class="form-control ps-4" id="requirement" placeholder="Requirements" rows={3}></textarea>
+                </div>
+                <button className='text-uppercase webBtnYellow text-white rounded-0 border-0 webBtn px-4 py-2 mt-4'>submit form</button>
               </div>
             </div>
           </div>
         </section>
+
+        <Footer />
 
       </React.Fragment>
     )

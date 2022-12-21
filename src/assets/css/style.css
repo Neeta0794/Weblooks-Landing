@@ -17,6 +17,12 @@ body {
   --blue: #13a1b1;
   --yellow: #fab925;
 }
+ul {
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+}
 .textYellow {
   color: var(--yellow);
 }
@@ -26,7 +32,7 @@ body {
 .webBtn {
   font-size: 13px;
   font-weight: 500;
-  line-height: 28px;
+  line-height: 26px;
   letter-spacing: 1px;
 }
 .webBtnBlue, .webBtnYellow:hover {
@@ -142,6 +148,7 @@ body {
 .bannerForm p {
   font-size: 18px;
   line-height: 1.6rem;
+  letter-spacing: .3px;
 }
 .bannerImg {
   width: 90%;
@@ -154,21 +161,20 @@ body {
 .formBody input {
   border: 1px solid rgba(208, 208, 208, 0.68);
 }
-.formBody input, .formBody input::-webkit-input-placeholder, .formBody form select {
+.formBody input, .formBody input::-webkit-input-placeholder, .formBody form select, .contact .form-control, .contact .form-select, .contact textarea {
   font-size: 15px;
   letter-spacing: 1px;
   color: #6f8ba4;
   line-height: 28px;
-  border-radius: 4px;
+  border-radius: 0;
 }
 .formBody input:focus, .formBody form select:focus, .formBody input:focus-visible {
-  border-color: #101010;
+  border: 1px solid #c2c2c2;
   box-shadow: none;
-  outline: -webkit-focus-ring-color auto 1px;
+  outline: none;
 }
 button:focus-visible, button:focus, button {
   outline: none;
-  border: none;
 }
 
 /* *********** Service Section ************ */
@@ -311,9 +317,11 @@ button:focus-visible, button:focus, button {
   overflow: visible;
 }
 
+/* *********** Testimonial Section ************ */
+
 .testimonial {
   padding-bottom: 6.5rem;
-  background: rgb(232 247 250 / 35%);
+  background: rgb(232 247 250 / 45%);
 }
 .avtar p {
   font-size: 18px;
@@ -339,9 +347,44 @@ button:focus-visible, button:focus, button {
   margin: 0 3px;
 }
 
+/* *********** Contact Us Section ************ */
+.contact {
+  padding-bottom: 7rem;
+}
 .shapeFour img {
-  width: 99%;
+  position: absolute;
+  top: -3rem;
+  z-index: -1;
 }
 .contact .sectionHead p {
   font-size: 1.4rem;
+}
+.contact .form-control:focus, .contact .form-select:focus {
+  box-shadow: none;
+  background: white;
+}
+.contact .form-control, .contact .form-select, .contact textarea {
+  background: rgb(232 247 250 / 45%);
+  line-height: 2rem;
+  border: 1px solid #e1e6ea;
+}
+.contact input::-webkit-input-placeholder, .contact textarea::-webkit-input-placeholder {
+  color: #6f8ba4;
+}
+.contact textarea {
+  resize: none;
+}
+
+/* *********** Footer Section ************ */
+.footer {
+  background: #f1fbfd;
+}
+.footer p, .footer ul li a {
+  font-size: 15px;
+  color: #4c9292;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+}
+.footer ul li a:hover {
+  color: var(--yellow);
 }

@@ -31,7 +31,7 @@ class Packages extends Component {
                 </div>
                 <div className='packagePrice py-4'>
                   <h5 className='fw-bold textYellow'>Rs. 999<small className='fw-light'>/ per annum</small></h5>
-                  <button className='text-uppercase webBtnYellow text-white rounded px-3 py-2 fw-bold'>Buy Now</button>
+                  <button className='text-uppercase webBtnYellow text-white rounded-0 border-0 px-3 py-2 fw-bold'>Buy Now</button>
                 </div>
               </div>
             </div>
@@ -54,7 +54,7 @@ class Packages extends Component {
                 </div>
                 <div className='packagePrice py-4'>
                   <h5 className='fw-bold textYellow'>Rs. 1,499<small className='fw-light'>/ per annum</small></h5>
-                  <button className='text-uppercase webBtnYellow text-white rounded px-3 py-2 fw-bold'>Buy Now</button>
+                  <button className='text-uppercase webBtnYellow text-white rounded-0 border-0 px-3 py-2 fw-bold'>Buy Now</button>
                 </div>
               </div>
             </div>
@@ -77,7 +77,7 @@ class Packages extends Component {
                 </div>
                 <div className='packagePrice py-4'>
                   <h5 className='fw-bold textYellow'>Rs. 1,999<small className='fw-light'>/ per annum</small></h5>
-                  <button className='text-uppercase webBtnYellow text-white rounded px-3 py-2 fw-bold'>Buy Now</button>
+                  <button className='text-uppercase webBtnYellow text-white rounded-0 border-0 px-3 py-2 fw-bold'>Buy Now</button>
                 </div>
               </div>
             </div>
@@ -100,7 +100,7 @@ class Packages extends Component {
                 </div>
                 <div className='packagePrice py-4'>
                   <h5 className='fw-bold textYellow'>Rs. 2,999<small className='fw-light'>/ per annum</small></h5>
-                  <button className='text-uppercase webBtnYellow text-white rounded px-3 py-2 fw-bold'>Buy Now</button>
+                  <button className='text-uppercase webBtnYellow text-white rounded-0 border-0 px-3 py-2 fw-bold'>Buy Now</button>
                 </div>
               </div>
             </div>

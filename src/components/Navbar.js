@@ -59,7 +59,7 @@ class Navbar extends Component {
                       </a>
                     </li>
                     <li className="nav-item ms-3">
-                      <button className="nav-link text-uppercase webBtnBlue text-white rounded px-3 mt-2">
+                      <button className="nav-link text-uppercase webBtnBlue text-white rounded-0 border-0 px-3 mt-2">
                         Request a quote
                       </button>
                     </li>
