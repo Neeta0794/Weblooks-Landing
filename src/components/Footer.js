@@ -3,6 +3,10 @@ import Logo from '../assets/img/logo.png';
 
 class Footer extends Component {
   render() {
+    const fontSize = {
+        fontSize: "14px",
+        lineHeight : "26px"
+    }
     return (
       <div className='py-5 footer'>
         <div className='container-md'>
@@ -11,7 +15,7 @@ class Footer extends Component {
                     <a href='/' target='_blank'>
                         <img src={Logo} alt='logo' className='w-75' />
                     </a>
-                    <p className='mt-3 '>Weblooks IT Services is the <span>Best Web Development Company In Mumbai</span> that provides professional customized solutions in web designing and software development. We deliver premium solutions for a wide range of business throughout India and around the world.</p>
+                    <p className='mt-3' style={{lineHeight : "26px"}}>Weblooks IT Services is the <span>Best Web Development Company In Mumbai</span> that provides professional customized solutions in web designing and software development. We deliver premium solutions for a wide range of business throughout India and around the world.</p>
                 </div>
 
                 <div className='col-md-3'>
@@ -42,14 +46,14 @@ class Footer extends Component {
 
                 <div className='col-md-3'>
                     <h3 className='my-4 pt-md-2 fs-5 textYellow'>Contact Us</h3>
-                    <p className='d-flex'>
+                    <p className='d-flex' style={fontSize}>
                         <i className="fa-solid fa-location-dot pe-2 pt-1"></i>
                         11, Pathak Residency,<br />
                         N L Complex, Anand Nagar,<br />
                         Dahisar(E), Mumbai 400068.
                     </p>
-                    <p><i className="fa-solid fa-phone pe-2 pt-1"></i>(+91) 986 761 8098</p>
-                    <p><i className="fa-solid fa-envelope pe-2 pt-1"></i>info@weblooks.co.in</p>
+                    <p style={fontSize}><i className="fa-solid fa-phone pe-2 pt-1"></i>(+91) 986 761 8098</p>
+                    <p style={fontSize}><i className="fa-solid fa-envelope pe-2 pt-1"></i>info@weblooks.co.in</p>
                 </div>
 
                 <div className='col-md-3'>
@@ -68,8 +72,8 @@ class Footer extends Component {
                             <a href='/'><i class="fa-brands fa-linkedin-in"></i></a>
                         </li>
                     </ul>
-                    
-                    <p>© 2018 Weblooks IT Services.</p>
+                    <div class="fb-like" data-href="https://weblooks.co.in/" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>
+                    <p style={fontSize} className="mt-2">© 2018 Weblooks IT Services.</p>
                 </div>
             </div>
         </div>
