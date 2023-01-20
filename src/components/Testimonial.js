@@ -19,8 +19,8 @@ class Testimonial extends Component {
                 <Slider {...settings}>
                     <div className='row testimonialSlider d-flex'>
                         <div className='col-md-7'>
-                            <blockquote class="blockquote">
-                                <p className='fst-italic'>"We are very much fortunate to find such people with so much creativity, passion and determination. We are not only happy to work with you but we are completely satisfied with your work. Keep up the good work.”</p>
+                            <blockquote className="blockquote">
+                                <p className='fst-italic'>"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.”</p>
                             </blockquote>
                         </div>
                         <div className='col-md-5'>
@@ -33,8 +33,8 @@ class Testimonial extends Component {
 
                     <div className='row testimonialSlider d-flex'>
                         <div className='col-md-8'>
-                            <blockquote class="blockquote">
-                                <p className='fst-italic'>“They are very Creative and understands the customer's need We are happy we got right people The blessings of Allah (be upon you).”</p>
+                            <blockquote className="blockquote">
+                                <p className='fst-italic'>“It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.”</p>
                             </blockquote>
                         </div>
                         <div className='col-md-4'>
@@ -47,8 +47,8 @@ class Testimonial extends Component {
 
                     <div className='row testimonialSlider d-flex'>
                         <div className='col-md-8'>
-                            <blockquote class="blockquote">
-                                <p className='fst-italic'>“Excellent work done by Weblooks IT Services.”</p>
+                            <blockquote className="blockquote">
+                                <p className='fst-italic'>“Contrary to popular belief, Lorem Ipsum is not simply random text.”</p>
                             </blockquote>
                         </div>
                         <div className='col-md-4'>

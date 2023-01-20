@@ -66,17 +66,17 @@ ul li a {
   z-index: -1;
 }
 .shapOne::before {
-  background: url(../img/shapeOne.png) left center no-repeat;
+  background: url(../img/shapeOne.png) no-repeat;
   left: -7rem;
   right: 0;
-  top: -38rem;
+  top: -13.5rem;
   bottom: 0;
   background-size: 30rem;
 }
 .shapOne::after {
   background: url(../img/shapeTwo.png) right no-repeat;
   left: 0;
-  right: -1.5rem;
+  right: 0;
   top: 0;
   bottom: -35rem;
   background-size: 30rem;
@@ -143,11 +143,20 @@ ul li a {
 .menu .navbar button.nav-link {
   font-size: 14px;
 }
+.navbar-collapse.show {
+  background: rgba(114, 200, 210, 0.12);
+}
+.menu i.fa-solid.fa-bars {
+  color: var(--yellow);
+}
+.menu .navbar button.nav-link {
+  margin-top: .5rem;
+}
 
 /* *********** Banner ************ */
 .bannerForm p {
   font-size: 18px;
-  line-height: 1.6rem;
+  line-height: 1.8rem;
   letter-spacing: .3px;
 }
 .bannerImg {
@@ -208,7 +217,7 @@ button:focus-visible, button:focus, button {
   padding: 2.5rem 2rem;
 }
 .serviceContent {
-  min-height: 15rem;
+  height: 17rem;
 }
 
 /* *********** Why Us Section ************ */
@@ -293,6 +302,7 @@ button:focus-visible, button:focus, button {
 
 .counter h1 {
   font-weight: 500;
+  font-size: 3rem;
 }
 .counter p {
   font-weight: 500;
@@ -366,7 +376,7 @@ button:focus-visible, button:focus, button {
 .contact .form-control, .contact .form-select, .contact textarea {
   background: rgb(232 247 250 / 45%);
   line-height: 2rem;
-  border: 1px solid #e1e6ea;
+  border: 1px solid rgb(225 230 234 / 50%);
 }
 .contact input::-webkit-input-placeholder, .contact textarea::-webkit-input-placeholder {
   color: #6f8ba4;
@@ -385,6 +395,9 @@ button:focus-visible, button:focus, button {
   transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
 }
-.footer ul li a:hover {
+.footer ul li:hover a {
   color: var(--yellow);
+}
+.fLogo {
+  width: 75%;
 }

@@ -13,8 +13,8 @@ class Packages extends Component {
             <h2 className='textBlue fw-normal py-3'>Hosting Packages</h2>
           </div>
           <div className='row'>
-            <div className='col-md-3'>
-              <div className='packageBox text-center mx-md-1 position-relative'>
+            <div className='col-lg-3 col-md-6'>
+              <div className='packageBox text-center mx-md-1 mb-5 mb-lg-0'>
                 <div className='packageHead position-relative'>
                   <img src={BasicIcon} className='packageIcon rounded-circle mx-auto' alt='Package Icon' />
                   <h3 className='fw-bold fs-4 text-white'>Basic Plan</h3>
@@ -36,8 +36,8 @@ class Packages extends Component {
               </div>
             </div>
 
-            <div className='col-md-3'>
-              <div className='packageBox text-center mx-md-1'>
+            <div className='col-lg-3 col-md-6'>
+              <div className='packageBox text-center mx-md-1 mb-5 mb-lg-0'>
                 <div className='packageHead position-relative'>
                   <img src={NormalIcon} className='packageIcon rounded-circle mx-auto' alt='Package Icon' />
                   <h3 className='fw-bold fs-4 text-white'>Normal Plan</h3>
@@ -59,8 +59,8 @@ class Packages extends Component {
               </div>
             </div>
 
-            <div className='col-md-3'>
-              <div className='packageBox text-center mx-md-1'>
+            <div className='col-lg-3 col-md-6'>
+              <div className='packageBox text-center mx-md-1 mb-5 mb-lg-0'>
                 <div className='packageHead position-relative'>
                   <img src={AdvanceIcon} className='packageIcon rounded-circle mx-auto' alt='Package Icon' />
                   <h3 className='fw-bold fs-4 text-white'>Advance Plan</h3>
@@ -82,7 +82,7 @@ class Packages extends Component {
               </div>
             </div>
 
-            <div className='col-md-3'>
+            <div className='col-lg-3 col-md-6'>
               <div className='packageBox text-center mx-md-1'>
                 <div className='packageHead position-relative'>
                   <img src={PremiumIcon} className='packageIcon rounded-circle mx-auto' alt='Package Icon' />

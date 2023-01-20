@@ -1,5 +1,153 @@
-@media (min-width: 1400px) {
-    /* .container-md {
-        padding: 0 15rem;
-    } */
+@media screen and (max-width:767px) {
+    .shapeFour img {
+        position: static;
+    }
+    .bannerImg {
+        width: 100%;
+    }
+    .sectionHead {
+        text-align: center;
+    }
+    .contact .sectionHead p {
+        font-size: 1.1rem;
+    }
+    .counter {
+        text-align: center;
+    }
+    .testimonial::before, .shapOne::after, .packageBox::after {
+        display: none;
+    }
+    .fLogo {
+        width: 55%;
+    }
+    .sectionPadding {
+        padding-top: 3.5rem;
+    }
+    .testimonial .blockquote {
+        font-size: 1rem;
+    }
+    .avtar p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:50em) and (orientation: landscape) {
+    .logo, .fLogo {
+        width: 25%;
+    }
+    .bannerImg {
+        width: 80%;
+    }
+    .contact {
+        padding-bottom: 4rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:991px) {
+    .logo {
+        width: 70%;
+    }
+    .hoverLine::before, .bannerImg, .shapeFour img {
+        display: none;
+    }
+    .menu .nav-link {
+        font-size: 12px;
+        padding: 8px 7px !important;
+    }
+    .menu .navbar button.nav-link {
+        font-size: 10px;
+    }
+    .menu .navbar button.nav-link {
+        margin-top: 0rem;
+    }
+    .sectionPadding {
+        padding-top: 4.5rem;
+    }
+    .shapOne::after {
+        right: 0;
+        background-size: 25rem;
+    }
+    .counter p {
+        font-size: 1.3rem !important;
+    }
+    .counter h1 {
+        font-size: 2.5rem;
+    }
+    .testimonial .blockquote {
+        font-size: 1rem;
+    }
+    .contact {
+        padding-bottom: 5rem;
+    }
+    .fLogo {
+        width: 25%;
+    }
+    .footer ul li a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width:1020px) {
+    .menu .hLogo {
+        width: 30%;
+    }
+    .menu .hNav {
+        width: 70%;
+    }
+    .menu .nav-link.hoverLine {
+        padding: .5rem !important;
+        font-size: 15px;
+    }
+    .menu .navbar button.nav-link {
+        margin-top: 0 !important;
+    }
+}
+
+@media screen and (min-width:1021px) and (max-width:1199px) {
+    .menu .navbar button.nav-link {
+        font-size: 12px;
+        margin-top: 0.2rem !important;
+    }
+    .menu .navbar ul li:nth-last-child(1) {
+        margin-left: 0.5rem !important;
+    }
+    .menu .nav-link.hoverLine {
+        font-size: 15px;
+        padding: 8px !important;
+    }
+    .logo {
+        width: 50%;
+    }
+    .bannerImg {
+        padding-right: 0 !important;
+        margin-top: 1.5rem;
+    }
+    .shapOne::after {
+        right: 0;
+    }
+    .serviceContent {
+        height: 18rem;
+    }
+    .counter:nth-child(1) {
+        margin-top: 0 !important;
+    }
+    .counter h1 {
+        font-size: 2.7rem;
+    }
+    .portfolioSlider {
+        margin-top: 1rem;
+    }
+    .footer p, .footer ul li a {
+        font-size: 14px;
+    }
+}
+@media screen and (min-width:1300px) and (max-width:1400px) {
+    .container-md {
+        max-width: 1200px;
+    }
+}
+@media screen and (min-width: 1700px) and (max-width:1920px) {
+    .container-md {
+        max-width: 1500px;
+    }
 }
